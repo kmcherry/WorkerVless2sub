@@ -38,7 +38,7 @@ let addresses = [
 	'jp.cherry.cloudns.org:2096#优选JP线路',	
 	'kr.cherry.cloudns.org:2096#优选KR线路',	
 	'ca.cherry.cloudns.org:2096#优选CA线路',		
-	'us.cherry.cloudns.org:2096#优选US线路',		
+	'us.cherry.cloudns.org:2096#优选US线路',
 ];
 
 // 设置优选地址api接口
