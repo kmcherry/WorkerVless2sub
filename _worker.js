@@ -27,10 +27,10 @@ let addresses = [
 	'tfl.gov.uk:2083#官方优选域名',	
 	'cm.cherry.cloudns.org:2096#优选CM线路',
 	'tc.cherry.cloudns.org:2096#优选TC线路',
-	'otc.cherry.cloudns.org:2096#优选OTC线路',
-	'ipdb.cherry.cloudns.org:2096#优选IPDB线路',
-	'yxfd.cherry.cloudns.org:2096#优选FD线路',
-	'yxgf.cherry.cloudns.org:2096#优选CF线路',
+	'otc.cherry.cloudns.org:443#优选OTC线路',
+	'ipdb.cherry.cloudns.org:443#优选IPDB线路',
+	'yxfd.cherry.cloudns.org:443#优选FD线路',
+	'yxgf.cherry.cloudns.org:443#优选CF线路',
 ];
 
 // 设置优选地址api接口
