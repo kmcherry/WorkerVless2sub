@@ -2,38 +2,95 @@
 // 部署完成后在网址后面加上这个，获取订阅器默认节点，/auto
 
 let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
+let mytoken= ['89c5225a-d356-4037-bb50-94a0ecd76667'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'icook.tw:2053#官方优选域名',
-	'cloudflare.cfgo.cc#优选官方线路',
+	'ztscf.cherry.cloudns.org:2053#小一-官方优选',
+	'mrfd.cherry.cloudns.org:443#Moist_R-反代优选',
+	'tc.cherry.cloudns.org:2096#天诚-反代优选',
+	'ipdb.cherry.cloudns.org:2053#ipdb-官方优选',
+	'cm.cherry.cloudns.org:8443#CM-三网官方优选',
+	'ct.090227.xyz:8443#CM-电信官方优选',
+	'cmcc.090227.xyz:8443#CM-移动官方优选',
+	'yxfd.cherry.cloudns.org:8443#Mingyu-反代优选路',
+	'yxgf.cherry.cloudns.org:2096#Mingyu-官方优选',
+	'otccf.cherry.cloudns.org:2096#OTC-官方优选',
+	'otcfd.cherry.cloudns.org:2096#OTC-反代优选',
+	'achk.cloudflarest.link:2083#kjkkk-hk官方优选',
+	'acjp.cloudflarest.link:2083#kjkkk-jp反代优选',
+	'acsg2.cloudflarest.link:2083#kjkkk-sg2反代优选',
+	'acsg3.cloudflarest.link:2083#kjkkk-sg3官方优选',
+	'acus.cloudflarest.link:2083#kjkkk-us官方优选',
+	'shopify.com:2053#shopify官方优选域名',
+	'icook.tw:2083#icook.tw官方优选域名',
+	'ip.sb:2087#ip.sb官方优选域名',
+	'japan.com:8443#japan.com官方优选域名',
+	'malaysia.com:2096#malaysia.com官方优选域名',
+	'russia.com:2096#russia.com官方优选域名',
+	'singapore.com:2053#singapore.com官方优选域名',
+	'skk.moe:2083#skk.moe官方优选域名',
+	'4chan.org:2087#4chan.org官方优选域名',
+	'wto.org:8443#wto.com官方优选域名',
+	'www.pcmag.com:2096#pcmag.com官方优选域名',
+	'www.ipget.net:2096#ipget.net官方优选域名',
+	'www.iplocation.io:2053#iplocation.io官方优选域名',
+	'www.whoer.net:2083#whoer.net官方优选域名',
+	'www.ipaddress.my:2087#ipaddress.my官方优选域名',
+	'www.iplocation.net:8443#iplocation.net官方优选域名',
+	'www.digitalocean.com:2096#digitalocean.com官方优选域名',
+	'www.whatismyipaddress.com:2096#whatismyipaddress.com官方优选域名',
+	'visa.cn:2096#visa.cn官方优选域名',
+	'www.visa.com:2053#visa.com官方优选域名',
+	'www.visa.com.sg:2083#visa.com.sg官方优选域名',
+	'www.visa.com.hk:2087#visa.com.hk官方优选域名',
+	'www.visa.com.tw:8443#visa.tw官方优选域名',
+	'www.visa.co.jp:2096#visa.co.jp官方优选域名',
+	'www.visakorea.com:2096#visakorea.com官方优选域名',
+	'gco.gov.qa:2053#gco.gov.qa官方优选域名',
+	'gur.gov.ua:2083#gur.gov.ua官方优选域名',
+	'gov.se:2087#gov.se官方优选域名',
+	'gov.ua:8443#gov.ua官方优选域名',
+	'zsu.gov.ua:2096#zsu.gov.ua官方优选域名',
+	'www.okcupid.com:2096#okcupid.com官方优选域名',
+	'www.who.int:2053#who.int官方优选域名',
+	'www.udacity.com:2083#udacity.com官方优选域名',
+	'www.udemy.com:2087#udemy.com官方优选域名',
+	'www.glassdoor.com:8443#glassdoor.com官方优选域名',
+	'on.cc:2053#on.cc优选域名',
+	'fbi.gov:2087#fbi.gov优选域名',				
+	'www.authy.com:2053#authy.com优选域名',
+	'www.canva.com:2096#canva.com优选域名',
+	'www.braze.com:2096#braze.co优选域名',
+	'upwork.com:2083#upwork.com优选域名',
+	'tfl.gov.uk:2083#tfl.gov.uk优选域名',
+	'www.tinyurl.com:2096#tinyurl.com优选域名',	
+	'www.government.se:2083#government.se优选域名',		
 ];
-
 // 设置优选地址api接口
 let addressesapi = [
-	'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	'https://kv.shaojun.filegear-sg.me/ip.txt?token=cC131027', //可参考内容格式 自行搭建。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt', //IPv6优选内容格式 自行搭建。
 ];
-
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
-let addressesnotls = [
+//let addressesnotls = [
 	'www.visa.com.sg#官方优选域名',
 	'www.wto.org:8080#官方优选域名',
 	'www.who.int:8880#官方优选域名',
 ];
-
 // 设置优选noTLS地址api接口
-let addressesnotlsapi = [
+//let addressesnotlsapi = [
 	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
 ];
 
 let DLS = 8;//速度下限
 let addressescsv = [
+	'https://www.gitgoogle.com/addressesapi.csv?token=CMorg', //iptest测速结果文件。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
 ];
 
-let subconverter = "subapi-loadbalancing.pages.dev"; //在线订阅转换后端，目前使用CM的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
+let subconverter = "subapi.fxxk.dedyn.io"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconfig = "https://raw.githubusercontent.com/kmcherry/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
 let noTLS = 'false'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
 let edgetunnel = 'ed';
@@ -54,7 +111,7 @@ let proxyhosts = [//本地代理域名池
 let proxyhostsURL = 'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/proxyhosts';//在线代理域名池URL
 let EndPS = '';//节点名备注内容
 let 协议类型 = 'VLESS';
-let FileName = 'WorkerVless2sub';
+let FileName = 'W2S-KV-TC';
 let SUBUpdateTime = 6; 
 let total = 99;//PB
 //let timestamp = now;
