@@ -85,7 +85,7 @@ let addressesapi = [
 
 let DLS = 8;//速度下限
 let addressescsv = [
-	'https://www.gitgoogle.com/addressesapi.csv?token=CMorg', //iptest测速结果文件。
+	'https://www.gitgoogle.com/addressesapi.csv?token=ZYSS20240107', //iptest测速结果文件。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
 ];
 
