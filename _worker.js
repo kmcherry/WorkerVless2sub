@@ -32,31 +32,14 @@ let addresses = [
 	'skk.moe:2083#skk.moe官方优选域名',
 	'4chan.org:2087#4chan.org官方优选域名',
 	'wto.org:8443#wto.com官方优选域名',
-	'www.pcmag.com:2096#pcmag.com官方优选域名',
-	'www.ipget.net:2096#ipget.net官方优选域名',
-	'www.iplocation.io:2053#iplocation.io官方优选域名',
-	'www.whoer.net:2083#whoer.net官方优选域名',
-	'www.ipaddress.my:2087#ipaddress.my官方优选域名',
-	'www.iplocation.net:8443#iplocation.net官方优选域名',
-	'www.digitalocean.com:2096#digitalocean.com官方优选域名',
-	'www.whatismyipaddress.com:2096#whatismyipaddress.com官方优选域名',
 	'visa.cn:2096#visa.cn官方优选域名',
-	'www.visa.com:2053#visa.com官方优选域名',
-	'www.visa.com.sg:2083#visa.com.sg官方优选域名',
-	'www.visa.com.hk:2087#visa.com.hk官方优选域名',
-	'www.visa.com.tw:8443#visa.tw官方优选域名',
-	'www.visa.co.jp:2096#visa.co.jp官方优选域名',
-	'www.visakorea.com:2096#visakorea.com官方优选域名',
 	'gco.gov.qa:2053#gco.gov.qa官方优选域名',
 	'gur.gov.ua:2083#gur.gov.ua官方优选域名',
 	'gov.se:2087#gov.se官方优选域名',
 	'gov.ua:8443#gov.ua官方优选域名',
 	'zsu.gov.ua:2096#zsu.gov.ua官方优选域名',
-	'www.okcupid.com:2096#okcupid.com官方优选域名',
-	'www.who.int:2053#who.int官方优选域名',
 	'www.udacity.com:2083#udacity.com官方优选域名',
 	'www.udemy.com:2087#udemy.com官方优选域名',
-	'www.glassdoor.com:8443#glassdoor.com官方优选域名',
 	'on.cc:2053#on.cc优选域名',
 	'fbi.gov:2087#fbi.gov优选域名',				
 	'www.authy.com:2053#authy.com优选域名',
@@ -65,7 +48,6 @@ let addresses = [
 	'upwork.com:2083#upwork.com优选域名',
 	'tfl.gov.uk:2083#tfl.gov.uk优选域名',
 	'www.tinyurl.com:2096#tinyurl.com优选域名',	
-	'www.government.se:2083#government.se优选域名',		
 ];
 // 设置优选地址api接口
 let addressesapi = [
@@ -85,12 +67,12 @@ let addressesapi = [
 
 let DLS = 8;//速度下限
 let addressescsv = [
-	'https://www.gitgoogle.com/addressesapi.csv?token=ZYSS20240107', //iptest测速结果文件。
+	'https://addcsv.ssorg.us.kg/addressesapi.csv?token=FL565565', //iptest测速结果文件。
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
 ];
 
 let subconverter = "subapi.fxxk.dedyn.io"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
-let subconfig = "https://raw.githubusercontent.com/kmcherry/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
+let subconfig = "https://raw.githubusercontent.com/kmcherry/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode(GSU)"; //订阅转换配置文件
 let noTLS = 'false'; //改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
 let edgetunnel = 'ed';
